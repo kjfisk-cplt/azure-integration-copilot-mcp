@@ -1,0 +1,45 @@
+# .NET gitignore
+bin/
+obj/
+*.user
+*.suo
+.vs/
+.vscode/settings.json
+
+# Local configuration overrides (never commit these)
+appsettings.*.json
+.env
+*.env
+
+# NuGet
+*.nupkg
+*.snupkg
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
