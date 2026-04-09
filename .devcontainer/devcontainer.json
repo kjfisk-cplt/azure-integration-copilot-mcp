@@ -1,0 +1,22 @@
+{
+  "name": "Azure Integration Copilot MCP",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:9.0",
+  "features": {
+    "ghcr.io/devcontainers/features/azure-cli:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "ms-dotnettools.csdevkit",
+        "ms-azuretools.vscode-azurelogicapps",
+        "ms-azuretools.vscode-azurefunctions",
+        "humao.rest-client"
+      ]
+    }
+  },
+  "forwardPorts": [5000],
+  "postCreateCommand": "dotnet restore ./src/AzureIntegrationMcp/AzureIntegrationMcp.csproj"
+}
